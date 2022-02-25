@@ -57,13 +57,13 @@ Process forked!
 2
 ```
 
-Recently I had a need for such a tool again and since it seems to still work on current versions of Windows, decided to upload it here in case it's useful for someone else as well. But keep in mind, this is not a sandbox for safely executing potentially malicious code!
+Recently I had a need for such a tool again and it seems to still work on current versions of Windows. I decided to upload it here in case it's useful for someone else as well. But keep in mind, this is not a sandbox for safely executing potentially malicious code!
 
 ## Files
 
 - `tester.c` - source code of the tool
 - `tester.exe` - statically linked 64-bit executable of the tool in case you don't have a C compiler
-- `test_time.c` - a program that uses CPU time in multpiple threads, to test time accounting of the tool
-- `test_mem.c` - a program that allocates some memory in multpiple threads, to test memory accounting of the tool
+- `test_time.c` - a program that uses CPU time in multiple threads, to test time accounting
+- `test_mem.c` - a program that allocates some memory in multiple threads, to test memory accounting
 - `test_idle.c` - a program that idles without using CPU time
 - `test_fork.c` - a program that spawns a sub-process
